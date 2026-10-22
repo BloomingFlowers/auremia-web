@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/*
+  AUREMIA Design Tokens
+  Ported from the HTML prototype — same palette, fonts, spacing.
+  Tailwind v4 uses @theme to map CSS variables to utility classes.
+*/
+
+@theme {
+  /* Brand palette */
+  --color-bg: #faf8f3;
+  --color-bg2: #f2ede5;
+  --color-ink: #171410;
+  --color-ink2: #6e675c;
+  --color-gold: #a8874f;
+  --color-gold-deep: #8f6f3b;
+  --color-emerald: #2f5d4e;
+  --color-line: #e9e2d6;
+
+  /* shadcn semantic tokens (mapped to brand palette) */
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-ink);
+  --color-card: #ffffff;
+  --color-card-foreground: var(--color-ink);
+  --color-popover: #ffffff;
+  --color-popover-foreground: var(--color-ink);
+  --color-primary: var(--color-ink);
+  --color-primary-foreground: #f2ede2;
+  --color-secondary: var(--color-bg2);
+  --color-secondary-foreground: var(--color-ink);
+  --color-muted: var(--color-bg2);
+  --color-muted-foreground: var(--color-ink2);
+  --color-accent: var(--color-gold);
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+  --color-border: var(--color-line);
+  --color-input: var(--color-line);
+  --color-ring: var(--color-gold);
+
+  /* Typography */
+  --font-sans: var(--font-inter), -apple-system, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+
+  /* Radius */
+  --radius: 0.75rem;
+}
+
+:root {
+  --background: #faf8f3;
+  --foreground: #171410;
+  --card: #ffffff;
+  --card-foreground: #171410;
+  --popover: #ffffff;
+  --popover-foreground: #171410;
+  --primary: #171410;
+  --primary-foreground: #f2ede2;
+  --secondary: #f2ede5;
+  --secondary-foreground: #171410;
+  --muted: #f2ede5;
+  --muted-foreground: #6e675c;
+  --accent: #a8874f;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e9e2d6;
+  --input: #e9e2d6;
+  --ring: #a8874f;
+  --radius: 0.75rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Font utility helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Placeholder color blocks (replace with real product images) */
+.ph-1 { background: linear-gradient(135deg, #2b2620, #5a4d3a); }
+.ph-2 { background: linear-gradient(135deg, #3a2e26, #6b5544); }
+.ph-3 { background: linear-gradient(135deg, #1e2826, #3a5048); }
+.ph-4 { background: linear-gradient(135deg, #2b2620, #4a3d30); }
+.ph-5 { background: linear-gradient(135deg, #33291f, #5e4b38); }
+.ph-6 { background: linear-gradient(135deg, #1a1f1d, #2f5d4e); }
+.ph-7 { background: linear-gradient(135deg, #3d3027, #6b5340); }
+.ph-8 { background: linear-gradient(135deg, #261f1a, #4d3f32); }
